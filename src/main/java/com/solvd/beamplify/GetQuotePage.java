@@ -13,13 +13,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GetQuotePage extends AbstractPage {
 
-    public GetQuotePage(WebDriver driver) {
-        super(driver);
-        PageFactory.initElements(driver, this);
-    }
-
-//    - - - Locators - - -
-
     @FindBy(xpath = "//button[@class='ButtonHoc_buttonHoc__3iHD9 ButtonNext_ButtonNext__2_EXb false']")
     private ExtendedWebElement nextButton;
 
@@ -178,6 +171,11 @@ public class GetQuotePage extends AbstractPage {
     @FindBy(xpath = "//div[contains(text(), 'Your scheduled call')]")
     private ExtendedWebElement scheduledCallMessage;
 
+
+    public GetQuotePage(WebDriver driver) {
+        super(driver);
+        PageFactory.initElements(driver, this);
+    }
 
     public void switchToQuoteWindow(String tabTitle){
         var windows = driver.getWindowHandles();
