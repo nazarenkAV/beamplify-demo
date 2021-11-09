@@ -17,7 +17,7 @@
 
 	<test name="Beamplify Demo web tests">
 		<classes>
-			<class name="com.solvd.beamplify.BeamplifyDemoTests" />
+			<class name="com.solvd.beamplify.tests.BeamplifyDemoTests" />
 		</classes>
 	</test>
 
